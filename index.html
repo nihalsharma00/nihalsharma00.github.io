@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Sharma - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c; /* Dark neon background */
+            color: #f9f7f7; /* Ivory text */
+            background-image: url('5590457.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #0f0f0f; /* Darker shade of neon */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #f9f7f7; /* Ivory text */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Yellow on hover */
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            color: #ffd700; /* Yellow headings */
+            text-align: center;
+        }
+
+        /* Project Styles */
+        .project {
+            background-color: #1a1a1a; /* Darker shade for project boxes */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            color: #ffd700; /* Yellow headings */
+        }
+
+        .project p {
+            color: #f9f7f7; /* Ivory text */
+        }
+
+        .project a {
+            color: #ffd700; /* Yellow link */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #f9f7f7; /* Ivory on hover */
+        }
+
+        /* Skills Icons */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .skills div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skills i {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #ffd700; /* Yellow icons */
+            transition: color 0.3s ease;
+        }
+
+        .skills span {
+            font-size: 1rem;
+            color: #f9f7f7; /* Ivory text */
+        }
+
+        .skills i:hover {
+            color: #f9f7f7; /* Ivory on hover */
+        }
+
+        /* Contact Form */
+        .contact-form {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #ffd900; /* Yellow submit button */
+            color: #0c0c0c; /* Dark neon text */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #f9f7f7; /* Ivory on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Sections -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div style="text-align: center;">
+                <img src="Nihal.jpg" alt="Nihal Sharma" style="width: 200px; border-radius: 50%; margin-bottom: 20px;">
+            </div>
+            <p>Welcome to my portfolio! I'm Nihal Sharma, a BTech student specializing in Data Science.</p>
+            <p>I am passionate about leveraging data to solve real-world problems and keen on exploring new technologies.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Technologies used: HTML, CSS, JavaScript, Python</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Description of the project. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Technologies used: React, Node.js, MongoDB</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <i class="fab fa-html5"></i> <!-- HTML5 icon -->
+                    <span>Data Analysis and Visualization</span>
+                </div>
+                <div>
+                    <i class="fab fa-css3-alt"></i> <!-- CSS3 icon -->
+                    <span>Machine Learning</span>
+                </div>
+                <div>
+                    <i class="fab fa-js"></i> <!-- JavaScript icon -->
+                    <span>Web Development (HTML/CSS/JS)</span>
+                </div>
+                <div>
+                    <i class="fab fa-python"></i> <!-- Python icon -->
+                    <span>Python Programming</span>
+                </div>
+                <div>
+                    <i class="fas fa-chart-bar"></i> <!-- Data Visualization icon -->
+                    <span>Databases (SQL, MongoDB)</span>
+                </div>
+                <div>
+                    <i class="fas fa-database"></i> <!-- Database icon -->
+                    <span>Data Structures and Algorithms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Dean's List - Spring Semester 2023</li>
+                <li>Second Place in Data Science Hackathon, 2022</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <br>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <br>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <p>Email: nihal@example.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/nihal">linkedin.com/nihal</a></p>
+            <p>GitHub: <a href="https://github.com/nihal">github.com/nihal</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
